@@ -12,7 +12,7 @@
         </div>
         <div class="temporary">
             <button class="start-conversation-button" @click="startConversation"></button>
-            <button @click="clearConversations">Clear Conversations</button>
+            <!-- <button @click="clearConversations">Clear Conversations</button> -->
         </div>
         <div v-for="(ChatWindow, index) in chatWindows" :key="index">
             <ChatWindow @close="closeTab(index)" @sendActiveConversations="recieveConversations" :preexistingCid="ChatWindow.props.preexistingCid" :key="index"/>
