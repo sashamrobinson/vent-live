@@ -4,9 +4,8 @@
             <div class="control-bar">
                 <WindowControls @close="closeTab"/>
             </div>
-            <h1 v-if="pageDisplay !== 'signup'" class="title-background" style="font-size: 10em; left: 1.1em; top: 0.8em">VENT</h1>
-            <h1 v-if="pageDisplay !== 'signup'" class="title" style="font-size: 10em; left: 1.2em; top: 0.7em">VENT</h1>
             <div v-if="pageDisplay === 'home'">
+                <img style="width: 60em; top: 0%;" class="vent-logo" src="../assets/images/vent_logo_render.png" alt="VENT">
                 <div class="grid">
                 <div class="auth-button-positioning">
                     <AuthButton :auth="'login'" :backgroundImage="'login_button.svg'"/>
@@ -16,29 +15,31 @@
                 <h3 class="credits">Made with Vue and Firebase.</h3>
                 </div>
             </div>
-            <div v-if="pageDisplay === 'login'" class="login-positioning">
-                <form class="login" @submit.prevent="login">
-                    <input 
-                        type="email" 
-                        placeholder="email@email.com"
-                        v-model="loginForm.email"
-                        class="text-field text-field-email"
-                        style="background-color: #D9D9D9; margin-bottom: 1em"
-                        @focus="addFocusClass" />
-                    <input 
-                        type="password" 
-                        placeholder="password"
-                        v-model="loginForm.password"
-                        class="text-field text-field-password"
-                        style="background-color: #A3A3A3"
-                        @focus="addFocusClass" />
-                    <input class="login-or-create login-button" type="submit">
-                    <h1 @click="this.$router.push(`/signup`)" class="re-signup-text">Don't have an account? Sign up</h1>
-                </form>
+            <div v-if="pageDisplay === 'login'">
+                <img style="width: 50em; top: 0%;" class="vent-logo" src="../assets/images/vent_logo_render.png" alt="VENT">
+                <div class="login-positioning">
+                    <form class="login" @submit.prevent="login">
+                        <input 
+                            type="email" 
+                            placeholder="email@email.com"
+                            v-model="loginForm.email"
+                            class="text-field text-field-email"
+                            style="background-color: #D9D9D9; margin-bottom: 1em"
+                            @focus="addFocusClass" />
+                        <input 
+                            type="password" 
+                            placeholder="password"
+                            v-model="loginForm.password"
+                            class="text-field text-field-password"
+                            style="background-color: #A3A3A3"
+                            @focus="addFocusClass" />
+                        <input class="login-or-create login-button" type="submit">
+                        <h1 @click="this.$router.push(`/signup`)" class="re-signup-text">Don't have an account? Sign up</h1>
+                    </form>
+                </div>
             </div>
             <div v-if="pageDisplay === 'signup'">
-                <h1 class="title-background" style="font-size: 10em; left: 1.1em; top: 0.8em">VENT</h1>
-                <h1 class="title" style="font-size: 10em; left: 1.2em; top: 0.7em">VENT</h1>
+                <img style="width: 45em; top: 0%;" class="vent-logo" src="../assets/images/vent_logo_render.png" alt="VENT">
                 <div class="signup-positioning">
                     <form class="login" autocomplete="off" @submit.prevent="register">
                         <input 
@@ -150,6 +151,11 @@ export default {
 @font-face {
     font-family: "CourierPrime-Regular";
     src: url('../assets/fonts/CourierPrime-Regular.ttf') format("truetype")
+}
+.vent-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .tab {
     position: relative;

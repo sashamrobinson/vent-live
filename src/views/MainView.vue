@@ -173,8 +173,8 @@ export default {
 .logo {
     display: inline-block;
     width: 17em; 
-    height: 14em; 
-    background-image: url("../assets/images/vent_logo.svg");
+    height: 17em; 
+    background-image: url("../assets/images/vent_logo_render2.png");
     background-repeat: no-repeat;
     background-size: cover; 
     background-color: rgba(0,0,0,0);
