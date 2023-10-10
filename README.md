@@ -14,7 +14,8 @@ Vent was single-handedly built over a two-month period in the summer of 2023. It
 <p></p>
 Vent was designed in Figma, built using a Vue/HTML5/CSS3 front-end stack with a Firebase backend, and deployed using Vercel through Github. The project served as a chance for me to increase my fluency with web developement, learn new libraries and frameworks, and to gather experience deploying and continously integrating to a live server.
 
-
+<p></p>
 The project is currently live at: vent-live.vercel.app
 
+<p></p>
 Developed by a university student
