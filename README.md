@@ -1,9 +1,9 @@
 # Vent
 
 <p float="left">
-  <img src="https://github.com/sashamrobinson/Storyteller/assets/62540597/6254531a-a922-48b1-8c2d-d249f5807cc3" width="300" />
-  <img src="https://github.com/sashamrobinson/Storyteller/assets/62540597/36e3ded7-2170-4f00-aed3-88713be94cbf" width="300" />
-  <img src="https://github.com/sashamrobinson/Storyteller/assets/62540597/7cc336c8-0bdc-4743-8bb4-9ad48f6ebec4" width="300" /> 
+  <img src="https://github.com/sashamrobinson/Storyteller/assets/62540597/6254531a-a922-48b1-8c2d-d249f5807cc3" width="250" />
+  <img src="https://github.com/sashamrobinson/Storyteller/assets/62540597/36e3ded7-2170-4f00-aed3-88713be94cbf" width="250" />
+  <img src="https://github.com/sashamrobinson/Storyteller/assets/62540597/7cc336c8-0bdc-4743-8bb4-9ad48f6ebec4" width="250" /> 
 </p>
 
 
